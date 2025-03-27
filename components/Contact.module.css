@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-:root {
-  --primary-color: #1d1d1d;
-  --background-color: #F2F3EB;
-  --text-color: #171717;
-}
 
 .container {
-  border: solid 3px var(--primary-color);
+  border: solid 3px  #1d1d1d;
   max-width: 768px;
   margin: 60px auto;
   padding: 30px;
   position: relative;
-  background-color: var(--background-color);
+  background-color:  #F2F3EB;
 }
 
 .form {
@@ -21,7 +16,7 @@
 }
 
 .heading {
-  color: var(--primary-color);
+  color:  #1d1d1d;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 7px;
@@ -30,7 +25,7 @@
 }
 
 .underline {
-  border-bottom: solid 2px var(--primary-color);
+  border-bottom: solid 2px  #1d1d1d;
   margin: -0.512em auto;
   width: 80px;
 }
@@ -42,7 +37,7 @@
 
 .icon {
   display: block;
-  fill: var(--primary-color);
+  fill:  #1d1d1d;
   height: 50px;
   margin: 0 auto;
   width: 50px;
@@ -56,8 +51,8 @@
 .inputField {
   background: none;
   border: none;
-  border-bottom: solid 2px var(--primary-color);
-  color: var(--primary-color);
+  border-bottom: solid 2px  #1d1d1d;
+  color:  #1d1d1d;
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -95,7 +90,7 @@
 
 .subject, .telephone, .textarea {
     background: none;
-    color:var(--text-color);
+    color:#171717;
   width: 100%;
 }
 
@@ -106,13 +101,13 @@
 }
 
 ::placeholder {
-  color: var(--primary-color);
+  color:  #1d1d1d;
 }
 
 .button {
   background: none;
-  border: solid 2px var(--primary-color);
-  color: var(--primary-color);
+  border: solid 2px  #1d1d1d;
+  color:  #1d1d1d;
   cursor: pointer;
   display: inline-block;
   font-family: 'Helvetica', Arial, sans-serif;
@@ -125,8 +120,8 @@
 }
 
 .button:hover {
-  background: var(--primary-color);
-  color: var(--background-color);
+  background:  #1d1d1d;
+  color:  #F2F3EB;
 }
 
 @media screen and (max-width: 768px) {
