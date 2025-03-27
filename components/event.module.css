@@ -1,0 +1,149 @@
+.img {
+    width: 100%;
+    max-height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .img:hover {
+    transform: scale(1.05);
+  }
+  .section{
+    margin-top: 50px;
+  }
+  @media screen and (max-width: 599px) {
+    .img {
+      height: 200px;
+    }
+  }
+  
+  .body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .main {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ff4c60;
+    margin-bottom: 2rem;
+  }
+  
+  .h2 {
+    color: #ff8a5c;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .h3 {
+    color: #ff8a5c;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gridWrapper {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .gridWrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .article {
+    background: #2b2a2b;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    flex-direction: row;
+  }
+  
+  .article:hover {
+    transform: translateY(-5px);
+  }
+  
+  .article .img {
+    width: 40%;
+    max-height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .article .content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article .content h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #ff8a5c;
+  }
+  
+  .article p {
+    font-size: 1rem;
+    color: #cfcfcf;
+    line-height: 1.6;
+  }
+  
+  .footerNote {
+    text-align: center;
+    font-size: 1rem;
+    background: #ff4c60;
+    padding: 1rem;
+    color: white;
+    border-radius: 5px;
+    margin-top: 2rem;
+  }
+  
+  .footerNote a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .footerNote a:hover {
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 768px) {
+    .article {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .article .img,
+    .article .content {
+      width: 100%;
+    }
+  }
+
+/* Section COntent Blurer */
+.blur {
+  max-width: 100%;
+  background: #02000884;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+}

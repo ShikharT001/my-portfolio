@@ -1,0 +1,301 @@
+.container {
+  max-width: 1200px;
+  min-height: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Button 1 */
+.button1 {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.button1:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button1:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button1:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.button2 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button2:disabled {
+  pointer-events: none;
+}
+
+.button2:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button2:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+/* Hero Section */
+.section {
+  padding: 100px 0;
+}
+
+.heroContent {
+
+  /* background: #02000884; */
+  /* backdrop-filter: blur(5px); */
+  padding: 20px;
+}
+
+
+.heroTitle {
+  font-size: 3rem;
+  color: #cdcdce;
+  margin-bottom: 20px;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  background-color: #cdcdce;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #cdcdce;
+}
+
+
+
+/* About Section */
+.about {
+  padding: 80px 0;
+}
+
+.aboutContent {
+  padding: 20px;
+  background: #02000884;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+}
+.sectionTitle {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff; /* Bright white for contrast */
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Add a vibrant gradient underline effect */
+.sectionTitle::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #00eaff, #ff69b4);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Hover effect to expand the underline */
+.sectionTitle:hover::after {
+  width: 120px;
+}
+
+/* Optional: Add glow effect on hover */
+.sectionTitle:hover {
+  color: #f5f5f5;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 
+               0 0 30px rgba(0, 234, 255, 0.7), 
+               0 0 45px rgba(255, 105, 180, 0.6);
+}
+
+
+.aboutText {
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Skills Section */
+.skills {
+  padding: 80px 0;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skillCard {
+  background-color: #1e1e1e;
+  border: #000;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+.skillCard:hover {
+  transform: translateY(-10px);
+}
+
+/* Projects Section */
+.projects {
+  padding: 80px 0;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.projectCard {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.projectCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00D1FF;
+}
+
+.projectCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/* Fetures */
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.featureCard {
+  background: #02000884;
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.featureCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00D1FF;
+}
+
+.featureCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.featuresTitle {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.featureDescription {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+
+/* Section COntent Blurer */
+.blur {
+  max-width: 100%;
+  background: #02000884;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+}
